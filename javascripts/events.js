@@ -42,7 +42,6 @@ $(document).ready(function(){
 	// Pegar altura do maior elemento e padronizar pora todas as caixas
 	function setaAlturaSortable(){
 	var alturasortable = $("#maior-altura").css("height");
-	console.log(alturasortable);
 	$(".ordenar ul li").css("min-height",alturasortable)
 	}
 
@@ -68,7 +67,6 @@ $(document).ready(function(){
 				$(".sort-fixo li:nth-of-type(" + nfixo + ")").removeClass("resolvido")
 				ordemcorreta--
 			}
-			console.log("ok: " + ordemcorreta);
 		}
 		// chama a função quando todos os itens estiverem na posição correta
 		if (ordemcorreta == 3){
@@ -78,7 +76,6 @@ $(document).ready(function(){
 
 	//desabilita sortable e chama feedback
 	function encerra_sortable(){
-		console.log("encerrou");
 		$( "#sortable" ).sortable( "disable" );
 		$( "#sortable .resolvido" ).addClass( "encerrado");
 		$( "#sort-feedback" ).fadeIn(1000);
@@ -105,7 +102,6 @@ var graus = [["0,4","0.4"],["0,035","0.035"],["0,08","0.08"],["0,01","0.01"]];
 
 // eventos para cálculo correto
 function aplicaOk(este_risco){
-	console.log("função aplica ok");
 	este_risco.prop( "disabled", true );
 	este_risco.siblings(".grau-ok").css("display","flex").hide().fadeIn();
 	este_risco.parent().siblings(".risco-desc").children().css("display","flex").hide().fadeIn();
@@ -157,7 +153,6 @@ tabelaInput.focusout(function(){
 
 	if ($(this).is(":invalid")) {
     exibeTooltipErro($(this));
-		console.log("inválido");
 	}
 
 	if($(this).is(":disabled")){
@@ -313,23 +308,12 @@ function ajustaAlturalCarousel2(){
 	$(".carousel-cards>div").height(alturaSlide2);
 }
 
-
-
-
-
-//NAVEGAÇÃO LINEAR
-
-function mostraControles(){
-	console.log("mostra controles")
-}
-
-mostraControles();
+//NAVEGAÇÃO
 
 //CONTROLA NAVEGAÇAO
 var telas = ["#tela-a", "#tela-b", "#tela-1", "#tela-2", "#tela-3", "#tela-3b", "#tela-4", "#tela-5", "#tela-6", "#tela-fim"]
 var n_telaAtual = 0
 var telaAtual = telas[n_telaAtual]
-console.log(telaAtual)
 
 //CONTROLA GUIA LATERAL
 function controlaNavLateral(){

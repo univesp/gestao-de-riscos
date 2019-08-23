@@ -55,7 +55,6 @@
   margin-bottom: 24px;
 }
 
-
 /* risco */
 #tela-5 .acao-risco>div:first-of-type {
   display: flex;
@@ -138,7 +137,6 @@
   align-items: center;
   justify-content: center;
   border: 1px solid white;
-  /* font-weight: 700; */
 }
 #tela-5 .acao-risco .itens-classificacao .certo::before {
   content: "done";
@@ -176,10 +174,6 @@
   color: #F15A24;
   margin-bottom: 1rem;
   margin-top: .5rem;
-}
-
-@media (max-width: 991.98px)  {
-
 }
 
 @media (max-width: 450px) {

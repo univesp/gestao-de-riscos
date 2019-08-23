@@ -7,11 +7,6 @@
   text-align: center;
 }
 
-.carousel,
-.carousel>div  {
-  /* border: 2px dotted pink; */
-}
-
 .carousel-indicators {
   position: relative;
   margin-bottom: 0;
@@ -51,7 +46,6 @@
 
 /* carrossel 2 */
 .carousel-cards .carousel-item {
-
 }
 .carousel-cards .carousel-item>div {
   margin-left: 1rem;
@@ -77,7 +71,7 @@
   margin-bottom: 1rem;
 }
 .carousel-cards .carousel-item ul {
-  padding-left: 20px;  
+  padding-left: 20px;
 }
 .carousel-cards .carousel-item>div>div:nth-of-type(2) h5, .carousel-cards .carousel-item>div:nth-of-type(2) li {
   text-align: left;
@@ -116,14 +110,6 @@
 
 .carousel-control-prev:hover, .carousel-control-next:hover  {
   opacity: 1;
-}
-
-.carousel-control-prev {
-  /* left: -10%; */
-}
-
-.carousel-control-next {
-  /* right: -10%; */
 }
 
 .carousel-control-prev-icon {
