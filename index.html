@@ -1,0 +1,1148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:image" content="assets/fb-share.png">
+  <meta name="author" content="Univesp">
+
+  <meta name="description" property="og:description"
+  content="Neste REA, você verá conceitos da gestão de riscos e a sua aplicabilidade em um projeto.">
+
+  <meta name="keywords" content="gestão de projetos, gestão de risco, gestão pública">
+
+  <title>Univesp | Gestão de Riscos</title>
+
+  <link rel="shortcut icon" href="http://apps.univesp.br/common/favicon.ico" type="image/x-icon"/>
+
+  <!-- Arquivos Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+
+  <!-- Ícones por Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <!-- Ícones por Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Tipografia institucional por Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet">
+  <!-- Tipografia extra -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap" rel="stylesheet">
+
+  <!-- Compartilhamento por jsSocials -->
+  <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials.css" />
+  <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials-theme-minima.css" />
+
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="https://apps.univesp.br/common/rea-geral-2.0.css">
+  <link rel="stylesheet" href="stylesheets/nav_footer.css">
+  <link rel="stylesheet" href="stylesheets/main.css">
+  <link rel="stylesheet" href="stylesheets/rotating-card.css"><!--carregar css dos cartões giratórios-->
+  <link rel="stylesheet" href="stylesheets/imagem-interativa.css">
+  <link rel="stylesheet" href="stylesheets/sortable.css">
+  <link rel="stylesheet" href="stylesheets/tabelapreenchivel.css">
+  <link rel="stylesheet" href="stylesheets/classificaritens.css">
+  <link rel="stylesheet" href="stylesheets/carrossel.css">
+
+  <!-- Arquivos Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://apps.univesp.br/common/jquery-ui-touch-punch.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+</head>
+
+<body class="d-flex flex-column">
+
+  <!-- Menu -->
+  <nav>
+    <div class="container-fluid d-flex justify-content-between">
+      <div class="logo">
+        <a class="pularNavegacao" href="#conteudoPrincipal">Pular para Conteúdo Principal</a>
+        <a href="https://univesp.br/" target="_blank">
+          <img src="https://apps.univesp.br/common/colorida-negativa.svg" alt="Link para site institucional. Logotipo da universidade formado pela palavra Univesp em letras maiúsculas, sendo a letra V estilizada.">
+          <!-- outras opções de img src: colorida-negativa.svg, traco-positiva.svg, traco-negativa.svg -->
+        </a>
+      </div>
+      <ul class="nav justify-content-end">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+            <i class="material-icons" aria-label="Opções de Compartilhamento">share</i>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right">
+            <div class="sharing" id="share-buttons"></div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Conteúdo -->
+  <main id="conteudoPrincipal" class="d-flex flex-column container-fluid">
+
+    <div class="todas-secoes">
+
+      <!-- INTRO -->
+      <div id="tela-a">
+        <div class="row secao justify-content-between">
+
+          <div class="col-lg-5 d-flex flex-column justify-content-center">
+            <h2>Gestão de Riscos</h2>
+            <p>
+              Qual é a probabilidade de um incêndio acontecer em um prédio ou de chover durante o final de semana? Perguntas como essas são a base para identificar e prever riscos, ou seja, eventos que podem tanto representar ameaças quanto oportunidades a todo e qualquer projeto. Vamos ver um exemplo prático?
+            </p>
+            <p>
+              Imagine o projeto de construção de um prédio. Podemos entender que, no decorrer da obra, vários riscos podem surgir. Você seria capaz de gerenciar um projeto assim?
+            </p>
+            <div class="nav-inicial d-lg-flex d-none">
+              <button class="bt-nav bt-avancar"></button>
+            </div>
+          </div>
+          <div class="col-lg-6 d-flex">
+            <img src="assets/intro.svg">
+          </div>
+          <div class="nav-inicial d-flex d-lg-none w-100" style="margin-top: 20px;">
+            <button class="bt-nav bt-avancar"></button>
+          </div>
+
+
+        </div>
+      </div>
+
+      <!-- TEORIA -->
+      <div class="secao" id="tela-b">
+        <p>
+          O risco, no contexto da gestão de projetos, pode ser definido como evento ou condição incerta que, se ocorrer, terá um efeito positivo ou negativo sobre os objetivos do projeto, sejam eles associados a custo, prazo, escopo ou qualidade do projeto.
+        </p>
+        <p>
+          Veja a seguir, de forma resumida, os seis processos que envolvem o gerenciamento de riscos:
+        </p>
+
+        <div class="cards-instrucoes">
+          Clique sobre os cartões para ver o verso
+        </div>
+        <!-- Cards -->
+        <div class="cards">
+            <!-- Card 1 -->
+            <div class="card-col">
+
+              <div class="card-container manual-flip">
+      					<div class="card">
+      						<div class="front">
+      							<div class="numeracao">1</div>
+                    <img src="assets/icon_1_planejar.svg">
+                    <p>
+                      Planejar o gerenciamento dos riscos
+                    </p>
+      						</div>
+      						<div class="back">
+                    <div class="numeracao">1</div>
+                    <p>
+                      Define como todas as atividades envolvidas no gerenciamento de riscos serão conduzidas ao longo do projeto.
+                    </p>
+      						</div>
+      					</div>
+    				  </div>
+
+            </div>
+            <!-- Card 2 -->
+            <div class="card-col">
+              <div class="card-container manual-flip ">
+      					<div class="card">
+      						<div class="front">
+      							<div class="numeracao">2</div>
+                    <img src="assets/icon_2_identificar.svg">
+                    <p>
+                      Identificar os riscos
+                    </p>
+      						</div>
+      						<div class="back">
+                    <div class="numeracao">2</div>
+                    <p>
+                      Determina os riscos que podem afetar o projeto e documenta suas características.
+                    </p>
+      						</div>
+      					</div>
+    				  </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="card-col">
+              <div class="card-container manual-flip ">
+      					<div class="card">
+      						<div class="front">
+      							<div class="numeracao">3</div>
+                    <img src="assets/icon_3_qualitativa.svg">
+                    <p>
+                      Realizar a análise qualitativa dos riscos
+                    </p>
+      						</div>
+      						<div class="back">
+                    <div class="numeracao">3</div>
+                    <p>
+                      Prioriza os riscos identificados para análise ou ação adicional por meio da avaliação e combina a probabilidade subjetiva de ocorrência do risco e o seu impacto no projeto.
+                    </p>
+      						</div>
+      					</div>
+    				  </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="card-col">
+
+              <div class="card-container manual-flip ">
+      					<div class="card">
+      						<div class="front">
+      							<div class="numeracao">4</div>
+                    <img src="assets/icon_4_quantitativa.svg">
+                    <p>
+                      Realizar a análise quantitativa dos riscos
+                    </p>
+      						</div>
+      						<div class="back">
+                    <div class="numeracao">4</div>
+                    <p>
+                      Por meio de modelos matemáticos e estatísticos, analisa o efeito dos riscos identificados, em relação aos objetivos gerais do projeto.
+                    </p>
+      						</div>
+      					</div>
+    				  </div>
+            </div>
+            <!-- Card 5 -->
+            <div class="card-col">
+              <div id="card5" class="card-container manual-flip ">
+      					<div class="card">
+      						<div class="front">
+      							<div class="numeracao">5</div>
+                    <img src="assets/icon_5_respostas.svg">
+                    <p>
+                      Planejar as respostas aos riscos
+                    </p>
+      						</div>
+      						<div class="back">
+                    <div class="numeracao">5</div>
+                    <p>
+                      Desenvolve opções e ações para aumentar as oportunidades e reduzir as ameaças dos riscos, em relação aos objetivos gerais do projeto.
+                    </p>
+      						</div>
+      					</div>
+    				  </div>
+            </div>
+            <!-- Card 6 -->
+            <div class="card-col">
+              <div class="card-container manual-flip ">
+      					<div class="card">
+      						<div class="front">
+      							<div class="numeracao">6</div>
+                    <img src="assets/icon_6_monitorar.svg">
+                    <p>
+                      Monitorar e controlar os riscos
+                    </p>
+      						</div>
+      						<div class="back">
+                    <div class="numeracao">6</div>
+                    <p>
+                      Implementa os planos de respostas aos riscos, acompanha os riscos identificados, monitora os riscos residuais, identifica novos riscos e avalia a eficácia dos processos de tratamento dos riscos em todo o projeto.
+                    </p>
+      						</div>
+      					</div>
+    				  </div>
+            </div>
+          </div>
+      </div>
+
+      <!-- SEÇÃO 1-2 - FIGURA INTERATIVA -->
+      <div  id="tela-1">
+        <div class="row secao">
+
+          <div class="col-lg-5 d-flex flex-column justify-content-center">
+            <p>
+              Imagine que você, como gestor do projeto da construção do prédio, já planejou todas as atividades que irão envolver o gerenciamento dos riscos e agora dará o próximo passo: identificar os riscos.
+            </p>
+            <p>
+              Para isso, você convoca os coordenadores e toda a equipe envolvida com o projeto para uma reunião de <i>brainstorm</i>.
+            </p>
+            <p>
+              <b>Clique nos personagens e veja a contribuição de cada um deles.</b>
+            </p>
+          </div>
+          <div class="col-lg-7 d-flex flex-column">
+            <div class="baloes order-md-1 order-2">
+              <div class="balao">
+                Se tivermos uma chuva forte, teremos que parar a concretagem na obra e isso atrasará o projeto.
+              </div>
+              <div class="balao">
+                Os congestionamentos são muito comuns, existe o risco de atraso no transporte dos materiais.
+              </div>
+              <div class="balao">
+                O aumento da taxa de câmbio pode causar aumento no custo da aquisição de materiais de acabamento, o que pode aumentar o custo do projeto.
+              </div>
+              <div class="balao">
+                Se tivermos um acidente com vítima dentro da obra, ela poderá ser interrompida pelo Ministério Público e atrasaremos o projeto, além de aumentar os custos.
+              </div>
+              <div class="balao">
+                Se os recursos de financiamento não forem liberados, a obra poderá ser interrompida pela construtora.
+              </div>
+            </div>
+            <div class="img-interativa order-md-2 order-1">
+              <img src="assets/brainstorm_ref.svg"> <!-- Imagem em branco apenas para definir o tamanho da div -->
+              <div class="d-flex">
+                <div class="click-item"></div>
+                <div class="click-item"></div>
+                <div class="click-item"></div>
+                <div class="click-item"></div>
+                <div class="click-item"></div>
+              </div>
+              <div class="img-itens">
+                <img style="z-index:2" src="assets/brainstorm_p1.svg">
+                <img style="z-index:2" class="item-destaque" src="assets/brainstorm_p1-active.svg">
+                <img src="assets/brainstorm_p2.svg">
+                <img class="item-destaque" src="assets/brainstorm_p2-active.svg">
+                <img src="assets/brainstorm_p3.svg">
+                <img class="item-destaque" src="assets/brainstorm_p3-active.svg">
+                <img src="assets/brainstorm_p4.svg">
+                <img class="item-destaque" src="assets/brainstorm_p4-active.svg">
+                <img src="assets/brainstorm_p5.svg">
+                <img class="item-destaque" src="assets/brainstorm_p5-active.svg">
+                <img style="z-index:3" src="assets/brainstorm_mesa.svg">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SEÇÃO 2 - ASSOCIAR ELEMENTOS -->
+      <div id="tela-2" class="avanco-off">
+        <div class="row secao">
+
+
+          <div class="col-lg-5">
+            <p>
+              Você deve ter notado que os riscos podem ser <strong>externos</strong>, decorrentes de causas naturais, econômicas e fornecimento, ou <strong>internos</strong>, ligados à organização, gerenciamento e tecnologia interna.
+            </p>
+            <p>
+              Além de identificar os riscos externos, um bom gestor de projetos não pode deixar de acompanhar e controlar os riscos internos.
+            </p>
+            <p>
+              A seguir, veja três situações que representam riscos internos e indique qual risco está relacionado à organização, qual está relacionado ao gerenciamento e qual está relacionado à tecnologia interna, <strong>ordenando corretamente a coluna da direita</strong>.
+            </p>
+          </div>
+
+          <!-- EXERCÍCIO ASSOCIAÇÃO -->
+          <div class="col-lg-7" style="margin-top: 1rem;">
+
+            <div class="instrucoes-sort">
+              <div style="margin-left: 160px; font-size: .9rem">
+                Arraste os itens abaixo para ordená-los
+              </div>
+            </div>
+
+            <div class="ordenar">
+              <!-- COLUNA 1 -->
+                <ul class="sort-fixo">
+                  <li>
+                    <p>
+                      Organização
+                    </p>
+                    <img src="assets/sort-organizacao.svg">
+                  </li>
+                  <li>
+                    <p>
+                      Gerenciamento
+                    </p>
+                    <img src="assets/sort-gerenciamento.svg">
+                  </li>
+                  <li>
+                    <p>
+                      Tecnologia Interna
+                    </p>
+                    <img src="assets/sort-tecnologia.svg">
+                  </li>
+                </ul>
+              <!-- COLUNA 2 -->
+                <ul id="sortable">
+                  <!-- 3 -->
+                  <li class="ui-state-default sort-requisitos">
+                    Requisitos e especificações inadequados.
+                  </li>
+                  <!-- 1 -->
+                  <li class="ui-state-default sort-inconsistencia" >
+                    Inconsistência de custos, tempo e objetivos de escopo.
+                  </li>
+                  <!-- 2 -->
+                  <li class="ui-state-default sort-alocacao" id="maior-altura">
+                    Alocação e controle precários de recursos humanos, financeiros e de tempo.
+                  </li>
+                </ul>
+            </div>
+            <div class="instrucoes-sort" id="sort-feedback">
+              <div style="color: #F15A24; font-weight: 700;">
+                Muito bem! Você relacionou corretamente os itens. Avance!
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- SEÇÃO 3 -->
+      <div id="tela-3">
+        <div class="row secao">
+
+          <div class="col-lg-7 order-lg-2">
+            <img src="assets/especialistas.svg">
+          </div>
+
+          <div class="col-lg-5 d-flex flex-column justify-content-center order-lg-1">
+            <p>
+              Depois de identificar os principais eventos associados a riscos negativos, é necessário estimar os valores referentes à probabilidade de cada um desses riscos acontecerem e o impacto que eles causariam no projeto, caso ocorressem. Para isso, você deve recorrer a especialistas na área de cada risco.
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- SEÇÃO 3.1 -->
+      <!-- <div class="row secao flex-column" id="tela-3b"> -->
+      <div class="secao flex-column avanco-off" id="tela-3b">
+        <div>
+
+          <p>
+            Após essa consulta, os especialistas lhe forneceram dados sobre a <strong>probabilidade</strong> e o <strong>impacto</strong> de cada evento.
+          </p>
+          <p>
+            Agora, para saber o <strong>grau de risco</strong>, você deve multiplicar estes valores.
+          </p>
+          <p>
+            Registre o resultado dos seus cálculos na coluna <strong>“Grau de risco”</strong> e descubra se o risco é alto, moderado ou baixo.
+          </p>
+
+          <div class="tabela-container">
+            <!-- Rótulos -->
+            <div class="d-none d-lg-flex">
+              <div></div>
+              <div>Risco</div>
+              <div>Probabilidade</div>
+              <div>Impacto</div>
+              <div>Grau de risco</div>
+              <div>Descrição</div>
+            </div>
+            <!-- Alagamento -->
+            <div class="evento-risco">
+              <div><img src="assets/icon-risco-alagamento.svg"></div>
+              <div>Alagamento da obra devido a fortes chuvas.</div>
+              <div>0,5</div>
+              <div>0,8</div>
+              <div>
+                <!-- 0,4 -->
+                <input type="number" step="0.0001" name="alagamento" placeholder="Preencher">
+                <div class="tooltip-feedback">
+                </div>
+                <div class="grau-ok">OK</div>
+              </div>
+              <div class="risco-desc">
+                <div class="risco-alto">Risco alto</div>
+              </div>
+            </div>
+            <!-- Atraso em horas -->
+            <div>
+              <div><img src="assets/icon-risco-atrasoh.svg"></div>
+              <div>Atraso, em horas, no recebimento de materiais devido ao congestionamento.</div>
+              <div>0,7</div>
+              <div>0,05</div>
+              <div>
+                <!-- 0,035 -->
+                <input  type="number" step="0.0001" name="atraso" placeholder="Preencher">
+                <div class="tooltip-feedback">
+                </div>
+                <div class="grau-ok">OK</div>
+              </div>
+              <div class="risco-desc">
+                <div class="risco-baixo">Risco baixo</div>
+              </div>
+            </div>
+            <!-- Incêndio -->
+            <div>
+              <div><img src="assets/icon-risco-incendio.svg"></div>
+              <div>Incêndio na obra.</div>
+              <div>0,1</div>
+              <div>0,8</div>
+              <div>
+                <!-- 0,08 -->
+                <input  type="number" step="0.0001" name="incendio" placeholder="Preencher">
+                <div class="tooltip-feedback">
+                </div>
+                <div class="grau-ok">OK</div>
+              </div>
+              <div class="risco-desc">
+                <div class="risco-moderado">
+                  Risco moderado
+                </div>
+              </div>
+            </div>
+            <!-- Atraso de um mês -->
+            <div>
+              <div><img src="assets/icon-risco-atrasom.svg"></div>
+              <div>Atraso de um mês no pagamento de um fornecedor, por descuido da contabilidade.</div>
+              <div>0,1</div>
+              <div>0,1</div>
+              <div>
+                <!-- 0,01 -->
+                <input  type="number" step="0.0001" name="atraso1mes" placeholder="Preencher">
+                <div class="tooltip-feedback">
+                </div>
+                <div class="grau-ok">OK</div>
+              </div>
+              <div class="risco-desc">
+                <div class="risco-baixo">Risco baixo</div>
+              </div>
+            </div>
+          </div>
+
+          <div id="tabela-feedback">
+            Muito bem! Agora que você já sabe o grau de risco de cada um dos itens, avance!
+          </div>
+
+        </div>
+      </div>
+
+      <!-- SEÇÃO 4 -->
+      <div id="tela-4">
+        <div class="row secao" >
+          <div class="col-lg order-lg-2">
+            <img src="assets/analise.svg">
+          </div>
+          <div class="col-lg d-flex flex-column justify-content-center order-lg-1">
+            <p>
+              A partir dos resultados obtidos, é possível realizar uma <strong>análise quantitativa</strong> dos riscos, analisando, por exemplo, projetos semelhantes já concluídos e os planos de gerenciamento dos riscos, custos e cronograma. Assim, é possível ter uma melhor definição das decisões a serem tomadas.
+            </p>
+            <p>
+              Agora, é necessário planejar as respostas aos riscos, ou seja, definir as opções, ações e decisões que permitem explorar melhor as oportunidades e reduzir as ameaças aos objetivos do projeto.
+            </p>
+            <p>
+              As respostas aos riscos devem fornecer <strong>ações preventivas</strong> (respostas aos riscos conhecidos), e <strong>ações corretivas</strong> (plano contingencial).
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- SEÇÃO 5 -->
+      <div class="secao avanco-off" id="tela-5">
+        <div>
+          <!-- ENUNCIADO -->
+          <div>
+            <h3>
+              Analisando cada risco a seguir, classifique as ações propostas como:
+            </h3>
+            <div>
+              <div class="cor-preventiva"><img src="assets/acao-prev-neg.svg"></div>
+                ações preventivas
+            </div>
+            <div>
+              <div class="cor-corretiva"><img src="assets/acao-corr-neg.svg"></div>
+                ações corretivas
+            </div>
+
+          </div>
+
+          <div id="classificacoes-resultado">
+            Você classificou corretamente <strong><span id="classificacoes-certas"></span></strong> de <strong>12</strong> ações.
+          </div>
+
+
+          <!-- EX. CLASSIFICAR ITENS -->
+          <div>
+
+            <!-- RISCO 1 -->
+            <div class="acao-risco">
+              <!-- RISCO  -->
+              <div>
+                <div><img src="assets/icon-risco-alagamento.svg"></div>
+                <div>Alagamento da obra devido a fortes chuvas</div>
+              </div>
+              <!-- CLASSIFICAÇÃO -->
+              <div>
+                <h4>Ações</h4>
+                <div class="itens-classificacao item-prev">
+                  <div>
+                    <div class="acao-prev"></div>
+                    <div class="acao-corr"></div>
+                  </div>
+                  <div>
+                    Criar áreas de escoamento de chuva.
+                  </div>
+                </div>
+                <div class="itens-classificacao item-prev">
+                  <div>
+                    <div class="acao-prev"></div>
+                    <div class="acao-corr"></div>
+                  </div>
+                  <div>
+                    Utilizar lonas para evitar perda de materiais, como areia.
+                  </div>
+                </div>
+                <div class="itens-classificacao item-corr">
+                  <div>
+                    <div class="acao-prev"></div>
+                    <div class="acao-corr"></div>
+                  </div>
+                  <div>
+                    Contratar empresa para bombeamento da água da região alagada.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- RISCO 2 -->
+            <div class="acao-risco">
+              <!-- RISCO  -->
+              <div>
+                <div><img src="assets/icon-risco-atrasoh.svg"></div>
+                <div>Atraso, em horas, no recebimento de materiais devido ao congestionamento</div>
+              </div>
+              <!-- CLASSIFICAÇÃO -->
+              <div>
+                <h4>Ações</h4>
+                <div class="itens-classificacao item-prev">
+                  <div>
+                    <div class="acao-prev"></div>
+                    <div class="acao-corr"></div>
+                  </div>
+                  <div>
+                    Programar o recebimento do material para as primeiras horas da manhã.
+                  </div>
+                </div>
+                <div class="itens-classificacao item-corr">
+                  <div>
+                    <div class="acao-prev"></div>
+                    <div class="acao-corr"></div>
+                  </div>
+                  <div>
+                    Promover folga dos funcionários e negociar a extensão do tempo de trabalho.
+                  </div>
+                </div>
+                <div class="itens-classificacao item-prev">
+                  <div>
+                    <div class="acao-prev"></div>
+                    <div class="acao-corr"></div>
+                  </div>
+                  <div>
+                    Ter um estoque de segurança para evitar que o trabalho sofra paralisações.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- RISCO 3 -->
+            <div class="acao-risco">
+              <!-- RISCO  -->
+              <div>
+                <div><img src="assets/icon-risco-incendio.svg"></div>
+                <div>Incêndio na obra</div>
+              </div>
+              <!-- CLASSIFICAÇÃO -->
+              <div>
+                <h4>Ações</h4>
+                <div class="itens-classificacao item-corr">
+                  <div>
+                    <div class="acao-prev"></div>
+                    <div class="acao-corr"></div>
+                  </div>
+                  <div>
+                    Contatar o Corpo de Bombeiros.
+                  </div>
+                </div>
+                <div class="itens-classificacao item-prev">
+                  <div>
+                    <div class="acao-prev"></div>
+                    <div class="acao-corr"></div>
+                  </div>
+                  <div>
+                    Instalar alarmes de incêndio.
+                  </div>
+                </div>
+                <div class="itens-classificacao item-prev">
+                  <div>
+                    <div class="acao-prev"></div>
+                    <div class="acao-corr"></div>
+                  </div>
+                  <div>
+                    Capacitar as pessoas para o combate ao fogo.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- RISCO 4 -->
+            <div class="acao-risco">
+              <!-- RISCO  -->
+              <div>
+                <div><img src="assets/icon-risco-atrasom.svg"></div>
+                <div>Atraso de um mês no pagamento de um fornecedor, por descuido da contabilidade</div>
+              </div>
+              <!-- CLASSIFICAÇÃO -->
+              <div>
+                <h4>Ações</h4>
+                <div class="itens-classificacao item-prev">
+                  <div>
+                    <div class="acao-prev"></div>
+                    <div class="acao-corr"></div>
+                  </div>
+                  <div>
+                    Implantar um sistema de informação que indica datas corretas de pagamento por meio de alertas.
+                  </div>
+                </div>
+                <div class="itens-classificacao item-prev">
+                  <div>
+                    <div class="acao-prev"></div>
+                    <div class="acao-corr"></div>
+                  </div>
+                  <div>
+                    Manter as planilhas sempre atualizadas.
+                  </div>
+                </div>
+                <div class="itens-classificacao item-corr">
+                  <div>
+                    <div class="acao-prev"></div>
+                    <div class="acao-corr"></div>
+                  </div>
+                  <div>
+                    Negociar com o fornecedor para evitar pagamento de multa por atraso.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button type="button" class="btn btn-primary" id="verifica-resposta">Checar respostas</button>
+
+          </div>
+          <div id="confira-novamente">
+            <strong>Ops!</strong> Nem todas as ações foram classificadas. Confira novamente.
+          </div>
+
+        </div>
+      </div>
+
+      <!-- SEÇÃO 6 -->
+      <div  id="tela-6">
+        <div class="row secao justify-content-between">
+
+
+
+          <div class="col-lg-4 d-flex flex-column justify-content-center">
+            <p>
+              Por fim, chega a etapa de <strong>monitorar e controlar os riscos</strong>, processo que ocorre quando o projeto está em andamento. Veja as questões que você deve ter em mente:
+            </p>
+          </div>
+          <div class="col-lg-7">
+
+            <!-- Inicio carousel -->
+              <div id="questoes-em-mente" class="carousel slide" data-ride="carousel">
+
+
+                <!-- conteúdo carrossel -->
+                <div class="carousel-simples carousel-inner">
+
+                  <div class="carousel-item active" id="alturaCarousel1">
+                    <div>
+                      <img  class="d-block h-100" src="assets/carrossel_1-3.svg" >
+                    </div>
+                    <div>
+                      As respostas aos riscos estão sendo implementadas de acordo com o que foi planejado?
+                    </div>
+                  </div>
+
+                  <div class="carousel-item">
+                    <div>
+                      <img  class="d-block h-100" src="assets/carrossel_1-1.svg"  >
+                    </div>
+                    <div>
+                      As ações de resposta aos riscos são tão efetivas quanto as esperadas?
+                    </div>
+                  </div>
+
+                  <div class="carousel-item">
+                    <div>
+                      <img  class="d-block h-100" src="assets/carrossel_1-2.svg"  >
+                    </div>
+                    <div>
+                      Tem ocorrido ou surgido riscos que não foram identificados previamente?
+                    </div>
+                  </div>
+
+                </div>
+
+                <!-- indicadores carrossel -->
+                <ol class="carousel-indicators">
+                  <li data-target="#questoes-em-mente" data-slide-to="0" class="active"></li>
+                  <li data-target="#questoes-em-mente" data-slide-to="1"></li>
+                  <li data-target="#questoes-em-mente" data-slide-to="2"></li>
+                </ol>
+
+                <!-- Controles carousel -->
+                <a class="carousel-control-prev" href="#questoes-em-mente" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#questoes-em-mente" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+              <!-- Fim carousel -->
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ENCERRAMENTO -->
+      <div id="tela-fim">
+        <div class="row secao justify-content-between" >
+
+
+
+          <div class="col-lg-4 d-flex flex-column justify-content-center">
+            <p>
+              Percebeu como o conhecimento dos riscos é importante para a gestão de um projeto? Além disso, viu como a prevenção sempre será uma medida mais interessante do que a utilização de um plano contingencial para corrigir o resultado de um evento negativo?
+            </p>
+            <p>
+              Veja um resumo dos riscos mapeados:
+            </p>
+          </div>
+
+          <div class="col-lg-7">
+
+            <div class="d-flex d-sm-none justify-content-center">
+              Deslize para o lado
+            </div>
+
+            <!-- Inicio carousel -->
+              <div id="resumo-riscos" class="carousel slide" data-ride="carousel">
+
+                <!-- conteúdo carrossel -->
+                <div class="carousel-cards carousel-inner">
+
+                  <div class="carousel-item active">
+                    <div>
+                      <div>
+                        <img  class="d-block h-100" src="assets/icon-risco-alagamento.svg" >
+                      </div>
+                      <div>
+                        <h4>Alagamento da obra devido a fortes chuvas</h4>
+                        <h5>
+                          Grau de risco:
+                          <span class="grau-alto">0,4 — Alto</span>
+                        </h5>
+                        <h5>
+                          Ações preventivas
+                        </h5>
+                        <ul>
+                          <li>
+                            Criar áreas de escoamento de chuva.
+                          </li>
+                          <li>
+                            Utilizar lonas para evitar perda de materiais, como areia.
+                          </li>
+                        </ul>
+                        <h5>
+                          Ações corretivas
+                        </h5>
+                        <ul>
+                          <li>
+                            Contratar empresa para bombeamento da água da região alagada.
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="carousel-item">
+                    <div>
+                      <div>
+                        <img  class="d-block h-100" src="assets/icon-risco-atrasoh.svg" >
+                      </div>
+                      <div>
+                        <h4>Atraso, em horas, no recebimento de materiais devido ao congestionamento</h4>
+                        <h5>
+                          Grau de risco:
+                          <span class="grau-baixo">0,035 — Baixo</span>
+                        </h5>
+                        <h5>
+                          Ações preventivas
+                        </h5>
+                        <ul>
+                          <li>
+                            Programar o recebimento do material para as primeiras horas da manhã.
+                          </li>
+                          <li>
+                            Ter um estoque de segurança para evitar que o trabalho sofra paralisações.
+                          </li>
+                        </ul>
+                        <h5>
+                          Ações corretivas
+                        </h5>
+                        <ul>
+                          <li>
+                            Promover folga dos funcionários e negociar a extensão do tempo de trabalho.
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="carousel-item">
+                    <div>
+                      <div>
+                        <img  class="d-block h-100" src="assets/icon-risco-incendio.svg" >
+                      </div>
+                      <div>
+                        <h4>Incêndio na obra</h4>
+                        <h5>
+                          Grau de risco:
+                          <span class="grau-mod">0,08 — Moderado</span>
+                        </h5>
+                        <h5>
+                          Ações preventivas
+                        </h5>
+                        <ul>
+                          <li>
+                            Instalar alarmes de incêndio.
+                          </li>
+                          <li>
+                            Capacitar as pessoas para o combate ao fogo.
+                          </li>
+                        </ul>
+                        <h5>
+                          Ações corretivas
+                        </h5>
+                        <ul>
+                          <li>
+                            Contatar o Corpo de Bombeiros.
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="carousel-item" id="alturaCarousel2">
+                    <div>
+                      <div>
+                        <img class="d-block h-100" src="assets/icon-risco-atrasom.svg" >
+                      </div>
+                      <div>
+                        <h4>Atraso de um mês no pagamento de um fornecedor, por descuido da contabilidade</h4>
+                        <h5>
+                          Grau de risco:
+                          <span class="grau-baixo">0,01 — Baixo</span>
+                        </h5>
+                        <h5>
+                          Ações preventivas
+                        </h5>
+                        <ul>
+                          <li>
+                            Implantar um sistema de informação que indica datas corretas de pagamento por meio de alertas.
+                          </li>
+                          <li>
+                            Manter as planilhas sempre atualizadas.
+                          </li>
+                        </ul>
+                        <h5>
+                          Ações corretivas
+                        </h5>
+                        <ul>
+                          <li>
+                            Negociar com o fornecedor para evitar pagamento de multa por atraso.
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+                </div>
+
+                <!-- indicadores carrossel -->
+                <ol class="carousel-indicators">
+                  <li data-target="#resumo-riscos" data-slide-to="0" class="active"></li>
+                  <li data-target="#resumo-riscos" data-slide-to="1"></li>
+                  <li data-target="#resumo-riscos" data-slide-to="2"></li>
+                  <li data-target="#resumo-riscos" data-slide-to="3"></li>
+                </ol>
+
+                <!-- Controles carousel -->
+                <a class="carousel-control-prev d-none d-sm-flex" href="#resumo-riscos" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next d-none d-sm-flex" href="#resumo-riscos" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+              <!-- Fim carousel -->
+
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+    <!-- NAVEGAÇÃO LINEAR -->
+    <div class="botoes-nav">
+      <div>
+        <button class="bt-nav bt-voltar"></button>
+        <button class="bt-nav bt-avancar"></button>
+        <button class="bt-nav bt-inicio"></button>
+      </div>
+    </div>
+
+    <!-- NAVEGAÇÃO LIVRE -->
+    <div class="nav-lateral">
+      <div class="bt-lateral">
+        1
+        <img src="assets/icon_1_planejar.svg">
+      </div>
+      <div class="bt-lateral">
+        2
+        <img src="assets/icon_2_identificar.svg">
+      </div>
+      <div class="bt-lateral">
+        3
+        <img src="assets/icon_3_qualitativa.svg">
+      </div>
+      <div class="bt-lateral">
+        4
+        <img src="assets/icon_4_quantitativa.svg">
+      </div>
+      <div class="bt-lateral">
+        5
+        <img src="assets/icon_5_respostas.svg">
+      </div>
+      <div class="bt-lateral">
+        6
+        <img src="assets/icon_6_monitorar.svg">
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <div class="container d-flex justify-content-between align-itens-center">
+
+      <div class="cred-rea">
+
+        <!-- Comente em caso de adaptação do REA -->
+        <p>
+          <span>Recurso Educacional Aberto (REA) desenvolvido pela <a href="https://univesp.br/" target="blank">Univesp</a>, disponível sob licença <a href="http://apps.univesp.br/common/license_MIT_2019.txt" target="_blank">MIT</a>.
+          Você pode utilizá-lo, compartilhá-lo e modificá-lo.</span>
+          <span><button class="btn btn-link" data-toggle="modal" data-target="#creditos">Créditos</button></span>
+          <span><a href="https://github.com/univesp/uma-camera-e-uma-ideia" target="_blank" aria-label="GitHub">GitHub <i class="fab fa-github"></i></a></span>.
+        <p>
+        <!-- Descomente em caso de adaptação do REA -->
+        <!-- <p>
+          <span>Recurso Educacional Aberto (REA) adaptado por SEU NOME.</span>
+          <span><a href="#">Versão original da Univesp</a></span>
+        </p> -->
+      </div>
+
+      <div class="aval-rea d-flex">
+       <!-- Atualizar "Nome+do+Recurso" -->
+       <a class="btn btn-secondary" href="https://docs.google.com/forms/d/e/1FAIpQLSd0R9PtJ6gsMVvX4CtpwNEB-NWVp478WPbp90eThdkN9SZ4Ew/viewform?usp=pp_url&amp;entry.542052009=Gestão+de+Riscos" target="_blank">Avaliar este recurso</a>
+
+       <!-- Atualizar "Nome+do+Recurso" -->
+       <a class="btn btn-secondary" href="https://docs.google.com/forms/d/e/1FAIpQLSdQrNoarS5M_II74dBQ8YXXeFWPG7By80XwytBeP4vEaYO26g/viewform?usp=pp_url&amp;entry.1523910789=Gestão+de+Riscos" target="_blank">Reportar erro</a>
+     </div>
+
+    </div>
+  </footer>
+  <!-- Fim do rodapé -->
+
+  <!-- Créditos -->
+  <div class="modal fade" id="creditos" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+
+          <h6>Governo do Estado de São Paulo</h6>
+          <p>Secretaria de Desenvolvimento Econômico</p>
+
+          <h6>UNIVERSIDADE VIRTUAL DO ESTADO DE SÃO PAULO – UNIVESP</h6>
+          <p><span class="funcao">Presidente</span>Rodolfo Jardim de Azevedo</p>
+          <p><span class="funcao">Diretora Acadêmica</span>Simone Telles Martins Ramos</p>
+
+          <h6>Equipe</h6>
+          <!-- <p><span class="funcao">Docente responsável</span>Rafael Leal de Araújo</p> -->
+          <p><span class="funcao">Coordenação</span>Édison Trombeta</p>
+          <p><span class="funcao">Roteirização e Design Instrucional</span>Natália de Oliveira Fernandes</p>
+          <p><span class="funcao">Ilustração</span>Celso Lourenço</p>
+          <p><span class="funcao">Layout</span>Pedro Belém e William Kimura</p>
+          <p><span class="funcao">Programação</span>Bruna Garabito e William Kimura</p>
+
+        </div>
+        <div class="modal-footer">
+          <p>Agosto/2019</p>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- D3 -->
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+
+  <!-- jsSocials -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials.min.js"></script>
+  <script>
+  var share = $("#share-buttons");
+  var page_title = $(document).attr('title');
+  var page_url = window.location.href;
+  share.jsSocials({
+    shares: [
+      {
+        share: "facebook",
+        label: "Facebook",
+        logo: "fab fa-facebook-f",
+      },
+      {
+        share: "twitter",
+        label: "Twitter",
+        logo: "fab fa-twitter",
+      },
+      {
+        share: "whatsapp",
+        label: "Whatsapp",
+        logo: "fab fa-whatsapp",
+      },
+    ],
+    url: page_url,
+    text: 'Confira o REA ' + page_title + '.',
+    showLabel: true,
+    showCount: false,
+    shareIn: "popup",
+  });
+  </script>
+
+
+  <!-- Custom JS -->
+  <script type="text/javascript" src="javascripts/events.js"></script>
+
+  <!-- MathJax. Descomente se for utilizar. Caso contrário, remova. -->
+  <!-- <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script> -->
+
+  <!-- Analytics. Remova em caso de reutilização do REA -->
+  <script src="https://apps.univesp.br/common/analytics.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,232 @@
+/* CORES
+Azul   #0071BC
+Laranja   #F15A24
+ */
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.container-fluid, nav>.container-fluid {
+  padding-left: 6%;
+  padding-right: 6%;
+}
+
+h2, h3, h4 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 4rem;
+  line-height: 4rem;
+  margin-bottom: 1rem;
+  color: #0071BC;
+}
+
+@media (max-width: 575.98px) {
+  h2 {
+    font-size: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+}
+
+main p {
+  max-width: 960px;
+}
+
+body {
+  background-color: #FFF;
+}
+
+main {
+  justify-content: center;
+}
+
+main img{
+  width: 100%;
+}
+
+.todas-secoes {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.secao {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+/* border-top: 15px solid red;
+border-bottom: 5px solid blue;
+margin-bottom: 20px; */
+}
+
+#tela-3 p, #tela-4 p {
+  padding-right: 4rem;
+}
+
+
+@media (max-width: 991.98px) {
+  #tela-3 img, #tela-4 img {
+    margin-bottom: 2rem;
+  }
+  #tela-3 p, #tela-4 p {
+    padding-right: 0;
+  }
+}
+
+/* BOTÕES DE NAVEGAÇÃO */
+.botoes-nav {
+  display: none;
+}
+.nav-inicial, .botoes-nav>div {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2rem;
+}
+
+.bt-nav {
+  background-color: #F15A24;
+  color: #fff;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin-top: 35px;
+  cursor: pointer;
+}
+.bt-nav:hover {
+  background-color: #D85120;
+}
+.bt-voltar {
+  margin-right: 6rem;
+}
+.bt-inicio {
+  background-color: #0071BC
+}
+.bt-inicio:hover {
+  background-color: #0065a9
+}
+.bt-nav::after {
+  width: 12px;
+  line-height: 0;
+}
+.bt-avancar::after {
+  content: url(../assets/icon_seta.svg);
+}
+.bt-voltar::after {
+  content: url(../assets/icon_seta.svg);
+  transform: rotate(180deg);
+}
+.bt-inicio::after {
+  content: url(../assets/icon_inicio.svg);
+}
+.bt-nav::before {
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+  color: #F15A24;
+  position: absolute;
+  top: -25px;
+}
+.bt-avancar::before {
+  content: "Avançar";
+}
+.bt-voltar::before {
+  content: "Voltar";
+}
+.bt-inicio::before {
+  content: "Início";
+  color: #0071BC;
+}
+
+.bt-avancar.avanco-off {
+  background-color: #d8d8d8;
+  pointer-events: none;
+}
+.bt-avancar.avanco-off::before {
+  color: #d8d8d8;
+}
+
+/* BOTõES BARRA LATERAL */
+.nav-lateral {
+  position: fixed;
+  left: -2px;
+  top: 0;
+  height: 100vh;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 100;
+}
+.nav-lateral div {
+  margin-left: -4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 70px;
+  background-color: #c0c0c0;
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  border-radius: 0 20px 20px 0;
+  border: 2px solid white;
+  box-sizing: content-box;
+  font-size: 18px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.nav-lateral div.ativo {
+  background-color: #0071BC;
+  pointer-events: none;
+}
+.nav-lateral div img {
+  margin-top: 4px;
+  display: block;
+  width: 25px;
+}
+@media (max-width: 1200px) and (min-width: 576px)  {
+  #tela-1, #tela-2, #tela-3, #tela-3b, #tela-4, #tela-5, #tela-6, #tela-fim {
+    padding-left: 3rem;
+  }
+}
+@media (max-width: 575.98px) {
+  .todas-secoes {
+    padding-left: 0rem;
+  }
+  .nav-lateral {
+    display: none!important;
+  }
+}
+
+
+
+/* ESCONDER */
+/* #tela-a, */
+#tela-b,
+#tela-1,
+#tela-2,
+#tela-3,
+#tela-3b,
+#tela-4,
+#tela-5,
+#tela-6,
+#tela-fim
+ {
+  display: none;
+}
+
+/* .botoes-nav {
+  display: block;
+} */

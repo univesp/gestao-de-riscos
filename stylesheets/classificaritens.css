@@ -1,0 +1,204 @@
+.sem-hover {
+  pointer-events:none;
+}
+#tela-5>div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#tela-5>div>div {
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* cores */
+#tela-5 .cor-preventiva {
+  background-color: #0071BC;
+}
+#tela-5 .cor-corretiva {
+  background-color: #F15A24;
+}
+/* enunciado */
+#tela-5 h3, #tela-5>div>div:first-of-type {
+  font-family: "Lato", sans-serif;
+  width: 100%;
+  color: #F15A24;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+#tela-5>div>div:first-of-type>div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+#tela-5>div>div:first-of-type>div>div {
+  width: 42px;
+  height: 42px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  position: relative;
+  margin-right: 15px;
+}
+
+
+/* card risco+acao */
+#tela-5 .acao-risco {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #0071BC;
+  border-radius: 24px;
+  padding: 24px 36px;
+  margin-bottom: 24px;
+}
+
+
+/* risco */
+#tela-5 .acao-risco>div:first-of-type {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+#tela-5 .acao-risco>div:first-of-type>div>img {
+  width: 50px;
+  margin-right: 20px;
+}
+#tela-5 .acao-risco>div:first-of-type>div:nth-of-type(2) {
+  color: #0071BC;
+  font-family: "Lato", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  max-width: 400px;
+}
+
+/* ações */
+#tela-5 .acao-risco h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+#tela-5 .acao-risco>div:nth-of-type(2) {
+  margin-top: 1rem;
+}
+#tela-5 .acao-risco .itens-classificacao {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+#tela-5 .acao-risco .itens-classificacao>div {
+  display: flex;
+  margin-right: 12px;
+}
+#tela-5 .acao-risco .itens-classificacao>div>div {
+  width: 42px;
+  height: 42px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 1px solid black;
+  position: relative;
+}
+#tela-5 .acao-risco .itens-classificacao>div>div:hover{
+  background-color: #E8E8E8;
+}
+#tela-5 .acao-risco .acao-prev {
+  background-image: url("../assets/acao-prev-pos.svg");
+}
+#tela-5 .acao-risco .acao-prev.ativo, #tela-5 .acao-risco .acao-prev.ativo:hover {
+  background-color: #0071BC;
+  border-color: #0071BC;
+  background-image: url("../assets/acao-prev-neg.svg");
+  }
+
+#tela-5 .acao-risco .acao-corr {
+  background-image: url("../assets/acao-corr-pos.svg");
+  margin-left: 5px;
+  margin-right: 10px;
+}
+#tela-5 .acao-risco .acao-corr.ativo, #tela-5 .acao-risco .acao-corr.ativo:hover {
+  background-image: url("../assets/acao-corr-neg.svg");
+  background-color: #F15A24;
+  border-color: #F15A24;
+}
+#tela-5 .acao-risco .itens-classificacao .certo::before, #tela-5 .acao-risco .itens-classificacao .errado::before {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  right: -5px;
+  top: -5px;
+  font-family: 'Material Icons';
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid white;
+  /* font-weight: 700; */
+}
+#tela-5 .acao-risco .itens-classificacao .certo::before {
+  content: "done";
+  background-color: #009e49;
+}
+#tela-5 .acao-risco .itens-classificacao .errado::before {
+  content: "clear";
+  background-color: #d33338;
+}
+#tela-5 .acao-risco .itens-classificacao .ativo.errado, #tela-5 .acao-risco .itens-classificacao .ativo.errado:hover {
+  color: #fff;
+  background-color: #a9a9a9;
+  border-color: #a9a9a9;
+}
+/* botão resposta */
+#tela-5 #verifica-resposta {
+  border-radius: 20px;
+  height: 48px;
+  background-color: #0071BC;
+  width: 100%;
+}
+#tela-5 #verifica-resposta:hover {
+  background-color: #005995;
+}
+/* feedback */
+#tela-5>div>div#classificacoes-resultado {
+  display: none;
+  color: #0071BC;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+/* respostas em branco */
+#tela-5>div>div#confira-novamente {
+  display: none;
+  color: #F15A24;
+  margin-bottom: 1rem;
+  margin-top: .5rem;
+}
+
+@media (max-width: 991.98px)  {
+
+}
+
+@media (max-width: 450px) {
+  /* card risco+acao */
+  #tela-5 .acao-risco {
+    width: 100vw;
+    border: none;
+    border-top: 2px solid #0071BC;
+    border-radius: 0;
+    padding: 24px 16px;
+    margin-bottom: 0;
+  }
+  #tela-5 .acao-risco:last-of-type {
+    border-bottom: 2px solid #0071BC;
+  }
+  #tela-5 #verifica-resposta {
+    width: 80%;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

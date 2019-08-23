@@ -1,0 +1,87 @@
+nav > .container-fluid {
+  position: static;
+}
+
+nav .logo {
+  position: relative;
+}
+
+/* Botão Pular para Conteúdo Principal */
+
+nav .logo .pularNavegacao {
+background-color: #0071BC;
+color: #fff;
+}
+
+/* Caixa do Logotipo */
+
+nav .logo img {
+  background-color: #0071BC;
+}
+
+/* Botões do Navbar */
+
+nav .nav-link {
+  color: white;
+  background-color: #0071BC;
+}
+
+nav .nav-link:focus,
+nav .nav-link:hover,
+nav .nav-link[aria-expanded="true"] {
+  background-color: #0071BC;
+  color: white;
+}
+
+nav .dropdown-menu {
+  margin-top: -1px;
+  border: 1px solid #0071BC;
+  background-color: #fff;
+}
+
+nav .dropdown-menu .jssocials-share-link {
+  /* color: #336698; */
+}
+
+/* Rodapé */
+footer {
+  background-color: #0071BC;
+  color: #fff;
+}
+
+footer .btn {
+  white-space: nowrap;
+}
+
+footer, footer .aval-rea .btn-secondary {
+  /* background-color: white;
+  color: #354551; */
+}
+
+footer .aval-rea .btn-secondary:hover {
+  background-color: white;
+  color: #0071BC;
+}
+
+footer .aval-rea .btn-secondary {
+    border: 1px solid white;
+}
+
+footer .cred-rea span:not(:last-child) {
+  border-right: 1px solid white;
+}
+
+/* Main */
+
+main {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+@media only screen and (max-width: 991.98px) {
+
+  main {
+    padding-bottom: 2rem;
+  }
+
+}

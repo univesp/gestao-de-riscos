@@ -1,0 +1,111 @@
+/* Gerais */
+#tela-2 .col-lg-5{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.ordenar, .instrucoes-sort {
+  margin: 0;
+  display: flex;
+  flex-grow: 0;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.ordenar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+}
+.ordenar ul li {
+  margin: 20px 0;
+  min-height: 130px;
+  padding: 18px;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: border-radius .2s;
+}
+/* Itens coluna esquerda */
+.ordenar ul:first-of-type {
+  margin-right: 20px;
+}
+.ordenar ul:first-of-type li {
+  width: 130px;
+  text-align: center;
+  align-items: center;
+  background-color: #F15A24;
+  color: #fff;
+}
+.ordenar ul li p {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+}
+.ordenar ul li img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Itens arrastáveis */
+#sortable {
+  flex: 1 1 auto;
+}
+#sortable li {
+  background: none;
+  background-color: #fff;
+  color: #000;
+  cursor: move;
+  border: 1px solid #F15A24;
+  box-sizing: border-box;
+}
+
+/* feedback */
+#sort-feedback {
+  display: none;
+}
+
+/* RESOLVIDO */
+.sort-fixo li.resolvido {
+  position: relative;
+  border-radius: 24px 0 0 24px;
+  transition: border-radius .2s;
+}
+#sortable li.resolvido {
+  background-color:	#f8ad93;
+  position: relative;
+  border-radius: 0 24px 24px 0;
+  margin-left: -20px;
+  padding-left: 38px;
+  transition: border-radius .2s;
+}
+#sortable li.encerrado {
+  background-color: #f5845b;
+  cursor: not-allowed;
+  transition: background-color .5s;
+}
+
+@media (max-width: 575.98px) {
+  .ordenar ul {
+    width: 130px;
+  }
+  .ordenar ul li {
+    border-radius: 18px;
+  }
+  #sortable li {
+    padding: 12px;
+    line-height: 20px;
+  }
+  .sort-fixo li.resolvido {
+    border-radius: 18px 0 0 18px;
+  }
+  #sortable li.resolvido {
+    border-radius: 0 18px 18px 0;
+    padding-left: 32px;
+  }
+}
+
+@media (max-width: 991.98px)  {
+
+}
